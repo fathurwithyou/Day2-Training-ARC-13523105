@@ -1,7 +1,7 @@
 body {
   font-family: "Plus Jakarta Sans", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   margin: 20px;
   padding: 0;
@@ -62,10 +62,53 @@ h1 {
   justify-content: center;
   margin-bottom: 20px;
 }
+#filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
 
 #filters select,
 #filters input,
 #filters button {
   padding: 8px;
   font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
 }
+
+#filters button {
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#filters button:hover {
+  background-color: #333;
+}
+
+#pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#pagination button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#pagination button:hover {
+    background-color: #f9f9f9;
+}
+

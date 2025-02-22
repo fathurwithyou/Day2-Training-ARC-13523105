@@ -18,11 +18,10 @@
         <select id="categoryFilter">
             <option value="all">All Categories</option>
         </select>
-        <input type="number" id="minPrice" placeholder="Min Price" min="0">
-        <input type="number" id="maxPrice" placeholder="Max Price" min="0">
+        <input type="number" id="minPrice" placeholder="Min Price">
+        <input type="number" id="maxPrice" placeholder="Max Price">
         <select id="ratingFilter">
             <option value="all">All Ratings</option>
-            <option value="5">5 Stars</option>
             <option value="4">4+ Stars</option>
             <option value="3">3+ Stars</option>
             <option value="2">2+ Stars</option>
@@ -31,8 +30,15 @@
         <button id="applyFilters">Apply Filters</button>
     </div>
     <div id="product-list"></div>
+    <div id="pagination">
+        <button id="prevPage" disabled>Previous</button>
+        <span id="pageNumber"></span>
+        <button id="nextPage">Next</button>
+    </div>
     <script src="js/main.js"></script>
+    <script src="js/display.js"></script>
     <script src="js/filter.js"></script>
+    <script src="js/pagination.js"></script>
 </body>
 
 </html>
