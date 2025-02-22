@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product List</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-
     <h1>Products</h1>
-
     <div id="filters">
         <select id="categoryFilter">
             <option value="all">All Categories</option>
         </select>
-        
         <input type="number" id="minPrice" placeholder="Min Price" min="0">
         <input type="number" id="maxPrice" placeholder="Max Price" min="0">
-        
         <select id="ratingFilter">
             <option value="all">All Ratings</option>
             <option value="5">5 Stars</option>
@@ -26,13 +28,11 @@
             <option value="2">2+ Stars</option>
             <option value="1">1+ Stars</option>
         </select>
-
         <button id="applyFilters">Apply Filters</button>
     </div>
-
     <div id="product-list"></div>
-
     <script src="js/main.js"></script>
     <script src="js/filter.js"></script>
 </body>
+
 </html>
