@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <a href="index.html" class="back-button">Back to Products</a>
+    <div class="product-container">
+        <div class="product-image">
+            <img id="product-img" src="" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h1 id="brand">Product Name</h1>
+            <p id="product-title">Product Name</>
+            <p id="product-description">Product description goes here.</p>
+            <p><strong>Category:</strong> <span id="product-category"></span></p>
+            <p class="price"><strong>Price:</strong> $<span id="product-price"></span></p>
+            <div class="product-details">
+                <h3><strong>Product Information</strong></h3>
+                <p><strong>Stock:</strong> <span id="product-stock"></span> left</p>
+                <p><strong>SKU:</strong> <span id="product-sku"></span></p>
+                <p><strong>Shipping Info:</strong> <span id="product-shipping"></span></p>
+                <p><strong>Return Policy:</strong> <span id="product-return"></span></p>
+            </div>
+            <div class="rating">
+                <h3><strong>Rating & Reviews</strong></h3>
+                <div class="rating-container">
+                    <span class="rate" id="product-rating">0.0</span>
+                    <div class="stars" id="star-rating"></div>
+                    <span id="total-reviews">(0 reviews)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/detail.js"></script>
+</body>
+
+</html>
